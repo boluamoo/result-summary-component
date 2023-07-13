@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+    display: flex;
+    border-radius: 1.875em;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-left {
+    color: white;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    gap: 1.5rem;
+    border-radius: 1.875em;
+    padding: 2em;
+    max-width: 330px;
+    text-align: center;
+    max-height: 28.4375em;
+}
+
+.to-left h4,
+.score p,
+p {
+    color: hsl(241, 100%, 89%);
+}
+.to-right h4{
+    color: black;
+}
+.to-left h3 {
+    font-size: 1.7rem;
+}
+
+.circle-container h1 {
+    font-size: 3.375rem;
+}
+
+.circle-container {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-right{
+    border-radius: 0 1.875em  1.875em 0;
+    min-width: 330px;
+    min-height: 28.4375em;
+    background-color: white;
+    padding: 2em;
+    gap: 1.5em;
+}
+.courses{
+    display: flex;
+    flex-direction: column;
+    min-height: 12.767em;
+    gap: 0.7979375em;
+}
+.courses img{
+    width: 16px;
+    height: 16px;
+}
+.courses div{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    justify-content: center;
+    min-height: 2.3938125em;
+    padding: 0.6em;
+    font-size: 0.87rem;
+    border-radius: 10px;
+    /* width: max-content; */
+}
+.reaction{
+    background-color: hsla(0, 100%, 67%, 5%);
+    color: hsl(0, 100%, 67%);
+    display: flex;
+}
+.memory{
+    background-color: hsla(39, 100%, 56%, 5%);
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    background-color:hsla(166, 100%, 37%, 5%);
+    color:hsl(166, 100%, 37%);
+    
+}
+.visual{
+    background-color: hsla(234, 85%, 45%, 5%);
+    color: hsl(234, 85%, 45%);
+
+}
+.course-score{
+    color: black;
+}
+.continue{
+    width: 240px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* padding: 0.6em; */
+}
+.continue-button{
+    text-align: center;
+    padding: 5%;
+    background: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.continue-button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 426px){
+    main{
+        flex-direction: column;
+        width: auto;
+    }
+    .to-left, .to-right{
+        max-width: none;
+    }
+    .to-right{
+        min-width: none;
+    }
+    .to-left{
+    border-radius:0 0 1.875em 1.875em;
+    }
+}
+@media (min-width: 540px){
+    main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
